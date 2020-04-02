@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace марафон2
 {
-    public partial class main : Form
+    public partial class runner : Form
     {
-        public main()
+        public runner()
         {
             InitializeComponent();
         }
@@ -27,32 +27,30 @@ namespace марафон2
             time1.Minutes.ToString() + " минут до старта марафона!";
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Login log = new Login();
-            log.Show();
-            this.Hide();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            checkrunner ch = new checkrunner();
-            ch.Show();
-            this.Hide();
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            sponsor s = new sponsor();
-            s.Show();
+            main m = new main();
+            m.Show();
             this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            more mr = new more();
-            mr.Show();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            main m = new main();
+            m.Show();
             this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            contacts c = new contacts();
+            c.ShowDialog();
+            
         }
     }
 }

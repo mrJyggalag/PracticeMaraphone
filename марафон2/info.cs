@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace марафон2
 {
-    public partial class main : Form
+    public partial class info : Form
     {
-        public main()
+        public info()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            more m = new more();
+            m.Show();
+            this.Hide();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -25,34 +32,6 @@ namespace марафон2
             time1 = initial_time - current_time;
             time.Text = time1.Days.ToString() + " дней " + time1.Hours.ToString() + " часов и " +
             time1.Minutes.ToString() + " минут до старта марафона!";
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Login log = new Login();
-            log.Show();
-            this.Hide();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            checkrunner ch = new checkrunner();
-            ch.Show();
-            this.Hide();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            sponsor s = new sponsor();
-            s.Show();
-            this.Hide();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            more mr = new more();
-            mr.Show();
-            this.Hide();
         }
     }
 }

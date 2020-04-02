@@ -46,6 +46,71 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="coordinators.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coordinators.Designer.cs">
+      <DependentUpon>coordinators.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkrunner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkrunner.Designer.cs">
+      <DependentUpon>checkrunner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fond.Designer.cs">
+      <DependentUpon>fond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contacts.Designer.cs">
+      <DependentUpon>contacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="info.Designer.cs">
+      <DependentUpon>info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sponsor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sponsor.Designer.cs">
+      <DependentUpon>sponsor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="runner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="runner.Designer.cs">
+      <DependentUpon>runner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaraphonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaraphonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="more.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="more.Designer.cs">
+      <DependentUpon>more.cs</DependentUpon>
+    </Compile>
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +119,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="coordinators.resx">
+      <DependentUpon>coordinators.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkrunner.resx">
+      <DependentUpon>checkrunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fond.resx">
+      <DependentUpon>fond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contacts.resx">
+      <DependentUpon>contacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="info.resx">
+      <DependentUpon>info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="more.resx">
+      <DependentUpon>more.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +155,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="runner.resx">
+      <DependentUpon>runner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sponsor.resx">
+      <DependentUpon>sponsor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MaraphonDataSet.xsc">
+      <DependentUpon>MaraphonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MaraphonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaraphonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MaraphonDataSet.xss">
+      <DependentUpon>MaraphonDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +184,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
